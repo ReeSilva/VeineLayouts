@@ -1,5 +1,29 @@
 $sidebar_color: #1b263c;
-$sidebar_text_color: #33343e;
+$sidebar_text_color: #7e8baa;
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Raleway', 'sans-serif';
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+h4 {
+    font-size: 1.5em;
+}
+
+h5 {
+    font-size: 1em;
+}
 
 html {
     background: url('../../images/background.jpg') no-repeat center center fixed;
@@ -8,6 +32,8 @@ html {
     -o-background-size: cover;
     background-size: cover;
     font-family: 'Roboto', 'Raleway', 'sans-serif';
+    line-height: 1.5em;
+    letter-spacing: 2px;
 }
 
 aside.sidebar {
@@ -21,7 +47,6 @@ aside.sidebar {
     font-size: 1.2em;
     left: 0;
     top: 0;
-    text-shadow: 1px -1px 1px #ccdbfc;
     opacity: 0.8;
 }
 
@@ -53,7 +78,9 @@ aside.sidebar header{
 }
 
 aside.sidebar nav{
+    margin-top: 50px;
     padding: 5px 30px;
+    height: 100%;
 }
 
 aside.sidebar nav li{
@@ -70,14 +97,33 @@ div.container {
 
 section.content {
     box-sizing: border-box;
-    width: 800px;
+    width: 1000px;
     padding: 10px;
     margin: 20px auto;
     border-style: solid;
     border-width: 0;
     border-radius: 3px;
-    background: rgba(255, 255, 255, 0.88);
+    background: rgba(255, 255, 255, 0.8);
     position: relative;
     left: 50%;
-    margin-left: -400px;
+    margin-left: -500px;
+}
+
+section.content header {
+    text-align: center;
+}
+
+section.content article {
+    padding: 10px;
+    word-wrap: break-word;
+}
+
+hr.separador {
+    border: 1px solid #434364;
+    box-shadow: 1px 1px 1px #ffffff;
+}
+
+hr.clear {
+    clear: both;
+    border-width: 0;
 }
