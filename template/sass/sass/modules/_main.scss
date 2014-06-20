@@ -1,5 +1,5 @@
 $sidebar_color: #1b263c;
-$sidebar_text_color: #727c8e;
+$sidebar_text_color: #33343e;
 
 html {
     background: url('../../images/background.jpg') no-repeat center center fixed;
@@ -21,6 +21,7 @@ aside.sidebar {
     font-size: 1.2em;
     left: 0;
     top: 0;
+    text-shadow: 1px -1px 1px #ccdbfc;
 }
 
 aside.sidebar .mao_logo{
@@ -58,11 +59,22 @@ aside.sidebar nav li{
     margin: 20px 5px;
 }
 
-section.container {
+
+div.container {
+    position: relative;
+    width: 80%;
+    margin: 20px 0;
+    float: right;
+}
+
+section.content {
     width: 800px;
     margin: 20px auto;
     border-style: solid;
     border-width: 0;
     border-radius: 3px;
     background: rgba(255, 255, 255, 0.88);
+    position: relative;
+    left: 50%;
+    margin-left: -400px;
 }
