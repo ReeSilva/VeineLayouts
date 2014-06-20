@@ -22,6 +22,7 @@ aside.sidebar {
     left: 0;
     top: 0;
     text-shadow: 1px -1px 1px #ccdbfc;
+    opacity: 0.8;
 }
 
 aside.sidebar .mao_logo{
@@ -68,7 +69,9 @@ div.container {
 }
 
 section.content {
+    box-sizing: border-box;
     width: 800px;
+    padding: 10px;
     margin: 20px auto;
     border-style: solid;
     border-width: 0;
