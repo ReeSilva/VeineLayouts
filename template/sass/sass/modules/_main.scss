@@ -1,0 +1,49 @@
+$sidebar_color: #1b263c;
+$sidebar_text_color: #727c8e;
+
+html {
+    background: url('../../images/background.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Roboto', 'Raleway', 'sans-serif';
+}
+
+aside.sidebar {
+    box-sizing: border-box;
+    position: absolute;
+    background: $sidebar_color url('../../images/noise.png');
+    height: 100%;
+    width: 350px;
+    padding: 0 10px;
+    color: $sidebar_text_color;
+    font-size: 1.2em;
+}
+
+aside.sidebar header{
+    margin: 5px auto;
+    float: left;
+}
+
+aside.sidebar nav{
+    padding: 5px 30px;
+    float: left;
+}
+
+aside.sidebar nav li{
+    margin: 20px 5px;
+}
+
+aside.sidebar::after {
+    background: -webkit-linear-gradient(left, transparent, black); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, transparent, black); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, transparent, black); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, transparent, black); /* Standard syntax */   
+    width: 10px;
+    height: 100%;
+    position: absolute;
+    float: right;
+    content: "";    
+    right: 0;
+}
